@@ -1,0 +1,134 @@
+\documentclass[uplatex,dvipdfmx,cjk,t,compress,notheorems]{beamer}
+
+%%%%%%%%%%
+% metropolis theme : global settings 
+%%%%%%%%%%
+
+\usetheme[numbering=fraction, block=fill]{metropolis}
+
+\setbeamersize{text margin left=1em, text margin right=1em}
+\setbeamertemplate{frame footer}{\insertshortauthor(\insertshortinstitute) \quad\insertshorttitle}
+
+
+%%%%%%%%%%
+% metropolis presentation theme
+% for handout, comment out the following 2 lines
+%%%%%%%%%%
+
+\metroset{background=dark}
+\usecolortheme{BkBoard}
+
+
+%%%%%%%%%%
+% pgfpages will help to make solit pdf files
+%%%%%%%%%%
+
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{4 on 1}[a4paper,landscape, border shrink=10mm]
+%\pgfpagesuselayout{4 on 1}[a4paper,border shrink=0mm]
+
+
+%%%%%%%%%%
+% packages
+%%%%%%%%%%
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{fancybox}
+\usepackage{mathrsfs}
+\usepackage{wrapfig}
+\usepackage{ascmac}
+\usepackage{eepic}
+\usepackage{pxjahyper}
+
+
+%%%%%%%%%%
+% Theorem
+%%%%%%%%%%
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{remark}{Remark}
+\def\proofname{Proof}
+
+
+%%%%%%%%%%
+% Figure name
+%%%%%%%%%%
+
+\renewcommand{\figurename}{Figure}
+
+
+%%%%%%%%%%
+% Mathematical symbols
+%%%%%%%%%%
+
+\DeclareMathOperator{\supp}{\mathrm{spt}}
+\DeclareMathOperator{\diam}{\mathrm{diam}}
+\DeclareMathOperator{\sgn}{\mathrm{sgn}}
+\DeclareMathOperator{\Ker}{\mathrm{Ker}}
+\DeclareMathOperator{\Ran}{\mathrm{Ran}}
+\DeclareMathOperator{\dist}{\mathrm{dist}}
+\DeclareMathOperator{\tr}{\mathrm{tr}}
+\DeclareMathOperator{\Div}{\mathrm{div}}
+\DeclareMathOperator{\Int}{\mathrm{Int}}
+\DeclareMathOperator*{\osc}{osc}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Sp}{\mathbb{S}}
+\renewcommand{\H}{\mathscr{H}}
+
+
+%%%%%%%%%%
+% Font setting
+%%%%%%%%%%
+
+\usepackage{newtxtext}
+\usepackage[varg]{newtxmath}
+\usefonttheme{professionalfonts}
+\mathversion{bold}
+\renewcommand{\kanjifamilydefault}{\gtdefault}%
+\usepackage[deluxe, expert]{otf}
+\usepackage[sfdefault,condensed]{roboto}
+\usepackage[T1]{fontenc}
+\newcommand{\Feq}{f^{\mathrm{eq}}}
+\usepackage[alphabet]{pxchfon}
+
+
+%%%%%%%%%%%%%%%%%%%%
+%
+\title[short title]{%
+\Large
+TITLE
+}
+\author[Short name]{\normalsize NAME}
+\institute[Short Inst.]{INSTTITUTE}
+\date{DATE@PLACE}
+
+\titlegraphic{
+% You can add logo
+%\includegraphics[height=30pt]{some logo figure file}
+}
+
+\begin{document}
+
+
+\begin{frame}[plain]
+ \titlepage
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{First frame title}
+ hogehoge
+\end{frame}
+
+
+\end{document}
